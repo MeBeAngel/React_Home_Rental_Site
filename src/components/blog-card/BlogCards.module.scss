@@ -1,0 +1,28 @@
+.article_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 25px;
+}
+
+
+@media(min-width: 920px) {
+  .article_grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media(min-width: 1390px) {
+  .article_grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+@media(min-width: 1820px) {
+  .article_grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

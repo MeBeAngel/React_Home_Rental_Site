@@ -1,0 +1,103 @@
+@import '../../scss/colors.scss';
+@import '../../scss/mixins.scss';
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+
+.logo {
+  @include flex;
+  @include alignFlexCenter;
+
+  .logo_image {
+    font-size: 35px;
+    color: $black;
+    margin-right: 10px;
+  }
+
+  h1 {
+    display: none;
+  }
+}
+
+
+.links {
+  a {
+    text-decoration: none;
+    color: $black;
+    font-weight: bold;
+    margin-right: 10px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+  }
+ }
+}
+
+
+// Media Q for 
+@media(min-width: 700px) {
+  nav {
+    .logo {
+      h1 {
+        display: block;
+        position: relative;
+        height: 43px;
+        color: $black;
+    
+        &::after {
+          content: "Come roost with us";
+          position: absolute;
+          top: 28px;
+          left: 1px;
+          font-size: 0.8rem;
+          color: $black;
+        }
+    
+        .nest_icon {
+          position: absolute;
+          top: 26px;
+          left: 125px;
+          font-size: 1rem;
+        }
+      }
+    }  
+  }
+}
+
+
+// Media Q for 1000px
+@media(min-width: 1000px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+
+    .logo {
+      @include flex;
+      @include alignFlexCenter;
+    
+      .logo_image {
+        font-size: 35px;
+        color: $black;
+        margin-right: 10px;
+      }
+    }
+  
+  
+   .links {
+      a {
+        font-size: 1.7rem;
+      }
+    }
+  
+  }
+}

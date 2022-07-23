@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Link reset */
+.link-reset {
+  text-decoration: none;
+}
+
+body {
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #f2f3f4;
+}
+
+
+/* background styles */
+.styled-background {
+  background-image: url("https://www.transparenttextures.com/patterns/axiom-pattern.png");
+}
+
+
+/* General Button Styles */
+.button-black {
+  color: #f2f3f4;
+  padding: 10px 8px;
+  border: none;
+  border-radius: 3px;
+  background-color: #191919;
+}
+
+button:hover {
+  cursor: pointer;
+}

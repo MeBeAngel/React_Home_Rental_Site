@@ -1,0 +1,47 @@
+@import '../../scss/colors.scss';
+@import '../../scss/mixins.scss';
+
+
+.search_wrapper {
+  @include flexRowCenterAll;
+  width: 100%;
+  height: 100px;
+  background-color: $off-orange;
+  @include boxShadowDark;
+
+  .search {
+    @include flexRowCenterAll;
+    @include boxShadowLight;
+
+     input, button {
+       height: 40px;
+       padding: 0 5px;
+       border: none;
+     }
+
+     input {
+       width: 250px;
+       border-top-left-radius: 4px;
+       border-bottom-left-radius: 4px;
+
+       &::placeholder {
+         color: $black;
+         font-weight: bold;
+       }
+
+       &:focus {
+         outline: none;
+       }
+     }
+
+     button {
+       @include flexRowCenterAll;
+       width: 50px;
+       font-size: 1.4rem;
+       color: $white;
+       border-top-right-radius: 4px;
+       border-bottom-right-radius: 4px;
+       background-color: $black;
+     }
+   }
+}

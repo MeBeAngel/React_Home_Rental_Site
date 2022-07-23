@@ -1,0 +1,12 @@
+@import '../../scss/colors.scss';
+@import '../../scss/mixins.scss';
+
+.contact_wrapper {
+  @include flexCol;
+  flex: 1;
+
+  .contact_body {
+    @include flexColCenterAll;
+    padding: 20px 0;
+  }
+}

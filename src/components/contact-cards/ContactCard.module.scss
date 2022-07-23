@@ -1,0 +1,61 @@
+@import '../../scss/colors.scss';
+@import '../../scss/mixins.scss';
+
+.contact_card_wrapper {
+  @include flex;
+  @include alignFlexEnd;
+  width: 350px;
+  height: 200px;
+  padding: 50px 30px;
+  border: solid #cccccc 1px;
+  transition: border 1s;
+  background-color: $off-orange;
+  @include boxShadowDark;
+
+  &:hover {
+    border: solid $black 2px;
+    transition: border 1s;
+  }
+
+  .card_info {
+    @include flexCol;
+    @include alignFlexStart;
+    width: 100%;
+    color: $black;
+    font-size: 1.5rem;
+
+    h3 {
+      color: $black;
+      font-size: 1.5rem;
+    }
+
+    p {
+      height: 0;
+      text-align: left;
+      font-size: 16px;
+      overflow: hidden;
+      opacity: 0;
+      transition: height 1s, opacity 1s;
+
+      button {
+        margin-top: 10px;
+        padding: 5px 10px;
+        color: $white;
+        border: none;
+        border-radius: 2px;
+        background-color: $black;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    
+    .show_para_animation {
+      opacity: 1;
+      height: 75px;
+      transition: height 1s, opacity 2s;
+    }
+  }
+}

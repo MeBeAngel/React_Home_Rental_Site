@@ -1,0 +1,7 @@
+@import '../../scss/colors.scss';
+@import '../../scss/mixins.scss';
+
+.rental_wrapper {
+  @include flexCol;
+  flex: 1;
+}

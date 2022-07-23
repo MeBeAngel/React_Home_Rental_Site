@@ -1,0 +1,15 @@
+@import '../../scss/colors.scss';
+@import '../../scss/mixins.scss';
+
+/* Style for page banner */
+.page_banner {
+  @include flexRowCenterAll;
+  height: 200px;
+  background-color: #040105;
+  background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+
+  h1 {
+    font-size: 3rem;
+    color: $white;
+  }
+}

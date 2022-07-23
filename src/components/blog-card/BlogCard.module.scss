@@ -1,0 +1,41 @@
+@import '../../scss/colors.scss';
+@import '../../scss/mixins.scss';
+
+.blog_card_wrapper {
+  max-width: 423px;
+  background-color: $off-orange;
+  @include boxShadowDark;
+
+  .card_header {
+    @include flexCol;
+    @include justifyFlexCenter;
+    @include alignFlexStart;
+    padding: 15px;
+
+    //.card_title {}
+
+    .card_subtitle {
+      font-size: 0.7rem;
+
+      .name {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .card_body {
+    .card_image {
+       height: 200px;
+       background-position: center;
+       background-size: cover;
+    }
+    .card_info {
+      text-align: left;
+      padding: 0 10px 10px 10px;
+
+      p {
+        margin: 10px 0;
+      }
+    }
+  }
+}

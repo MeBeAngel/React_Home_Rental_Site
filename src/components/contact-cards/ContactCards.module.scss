@@ -1,0 +1,21 @@
+.contact_cards_wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 25px;
+}
+
+
+@media(min-width: 750px) {
+  .contact_cards_wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media(min-width: 1080px) {
+  .contact_cards_wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

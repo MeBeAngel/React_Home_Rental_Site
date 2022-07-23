@@ -1,0 +1,18 @@
+@import '../../scss/colors.scss';
+@import '../../scss/mixins.scss';
+
+.blog_wrapper {
+  @include flexCol;
+  flex: 1;
+  
+  .blog_body {
+    @include flexColCenterAll;
+    padding: 20px 0;
+   }
+
+   @media(min-width: 450px) {
+    .blog_body {
+      padding: 20px;
+     }
+   }
+}

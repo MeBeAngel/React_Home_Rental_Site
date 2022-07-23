@@ -1,0 +1,69 @@
+@import '../../scss/colors.scss';
+@import '../../scss/mixins.scss';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto 50px auto;
+
+&:hover {
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 10px;
+  @include boxShadowDark;
+}
+
+span {
+  font-size: 0.7rem;
+  color: $black;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: $black;
+}
+
+.border_curve_left, .border_curve_right {
+  border-radius: 0;
+  border-top-left-radius: 50%;
+}
+
+.border_curve_right {
+  border-radius: 0;
+  border-top-right-radius: 50%;
+}
+
+// Arrow wiggle right animation
+@keyframes wiggle-right-animation {
+  0% {transform: rotate(45deg)}
+  100% {transform: rotate(0deg)}
+}
+
+.wiggle_right_animation {
+  animation-name: wiggle-right-animation;
+  animation-duration: 1s;
+}
+
+// Arrow wiggle left animation
+@keyframes wiggle-left-animation {
+  0% {transform: rotate(-45deg)}
+  100% {transform: rotate(0deg)}
+}
+
+.wiggle_left_animation {
+  animation-name: wiggle-left-animation;
+  animation-duration: 1s;
+}
+
+
+&:last-of-type {
+  margin-bottom: 0;
+}
+
+}
